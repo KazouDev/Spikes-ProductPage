@@ -139,20 +139,11 @@ main {
 
   .image {
     width: 90%;
-    height: 60%;
     max-height: 100%;
   }
 
   .footer {
     margin-top: 3em;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .image {
-    width: 90%;
-    height: 40%;
-    background: red;
   }
 }
 
