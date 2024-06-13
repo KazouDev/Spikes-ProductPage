@@ -44,3 +44,24 @@ itemCarPreview.forEach((p, i) => {
     reloadSlider();
   });
 });
+
+const more = document.getElementById("more");
+const lower = document.getElementById("lower");
+const number = document.getElementById("number");
+
+var currentNumber = 1;
+
+const reloadNumber = () => {
+  number.innerText = currentNumber;
+};
+
+more.addEventListener("click", () => {
+  currentNumber++;
+  reloadNumber();
+});
+
+lower.addEventListener("click", () => {
+  if (currentNumber == 1) return;
+  currentNumber--;
+  reloadNumber();
+});
