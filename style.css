@@ -149,7 +149,7 @@ main {
 
 @media screen and (max-width: 900px) {
   main {
-    height: 125%;
+    height: 140%;
   }
 }
 
@@ -337,6 +337,12 @@ main {
   border: var(--grey) solid 2px;
   transition: border-color 0.5s linear;
   cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .previews img {
+    width: 4rem;
+  }
 }
 
 .previews img.current {
